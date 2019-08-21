@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    font-family: Lato;
+    list-style-type: none;
+}
+
+body{
+    font-size: 20px;
+}
+
+.nav {
+    padding: 0 10px 0px 10%;
+    text-align: center;
+    background-color: #d2cfd2;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.shadow{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(74,66,63,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(74,66,63,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(74,66,63,0.5);
+}
+
+.logo {
+    width: 120px;
+    height: 30px;
+    color: wheat;
+    background: #b6936c;
+    font-size: 20px;
+    float: left;
+    border-radius: 20px 7px 20px 7px;
+    margin: 10px 20px 15px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav__button {
+    width: 120px;
+    height: 30px;
+    background: #a7a0a2;
+    font-size: 20px;
+    float: left;
+    border-radius: 20px 7px 20px 7px;
+    margin: 10px 20px 15px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.nav__button--hover:hover {
+    cursor: pointer;
+    background-color: #b6936c;
+    color: #4a423f;
+}
+
+a:link{
+    color: #4a423f;
+}
+a:visited{
+    color: #4a423f;
+}
+a:hover {
+    color: wheat;
+}
+a:active {
+    color: #4a423f;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    text-align: right;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 55px;
+    padding: 15px;
+    background-color: #b6936c;
+    color: wheat;
+    border-radius: 7px 20px 7px 20px;   
+}
+
+.main {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.photo {
+    float: left;
+    width: 25%;
+    max-width: 200px;
+    margin: 7px 10px 3px 0;
+    border-radius: 20px 5px 20px 5px;
+}
+
+.article {
+    padding-top: 75px;
+    color:  #4a423f;
+
+}
+.title {
+    text-align: center;
+    font-size: 25px;
+}.title2 {
+    font-size: 25px;
+}
+/* flex-box for interests icons */
+.interests-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 45px;
+    color: #b6936c;~ 
+}
+/* grid template for skills */
+.skills {
+    display: grid;
+    grid-template-columns: 1 fr 1fr 1fr 1fr 1fr 1 fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"iCan html css git ."
+                        "inP js sass api ."
+                        "Iwill jq redux csharp .";
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    justify-items: right;
+    margin-top: 5%;
+    font-size: 25px;
+    
+}
+.skills-iCan {
+    grid-area: iCan;
+    margin-top: 10%;
+}
+.skills-html {
+    grid-area: html;  
+}
+.skills-css {
+    grid-area: css;
+}
+.skills-git {
+    grid-area: git;
+}
+.skills-inProgress {
+    grid-area: inP;
+    margin-top: 10%;
+}
+.skills-js {
+    grid-area: js;  
+}
+.skills-sass {
+    grid-area: sass;
+}
+.skills-api {
+    grid-area: api;
+}
+.skills-Iwill {
+    grid-area: Iwill;
+    margin-top: 10%;
+}
+.skills-jq {
+    grid-area: jq;
+    
+}
+.skills-redux {
+    grid-area: redux;
+}
+.skills-csharp {
+    grid-area: csharp;
+}
+
+
+.list {
+    text-decoration-color: #b6936c;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+.list__item {
+    max-width: 50%;
+    margin-top: 25px;
+}
+.list__item:hover{
+    transform: scale(0.9) rotate(2deg);
+    transition: transform 0.2s ease-in-out;
+
+}
+
+
+.footer {
+    background-color: #a7a0a2;
+    color: wheat;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
